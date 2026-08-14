@@ -36,6 +36,17 @@ Week 4: 10 August 2026 – 14 August 2026
 
 
 
+## Sitemap
+​
+Home (index.html)
+├── About Us (about.html)
+├── Services (services.html)
+├── Pricing (pricing.html)
+├── Membership (membership.html)
+├── Enquiry (enquiry.html)
+└── Contact (contact.html)
+​
+
 
 
 
