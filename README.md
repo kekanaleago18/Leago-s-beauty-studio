@@ -46,6 +46,13 @@ Home (index.html)
 ├── Enquiry (enquiry.html)
 └── Contact (contact.html)
 ​
+REFERENCES
+- Rafael, R. (2026). Unsplash. Available at: https://unsplash.com/photos/Pe9lXUC6QU (Accessed: 12 August 2026).
+- Anva Marketing. (2026) . Pexels. Available at: https://www.pexels.com/photo/1443864/ (Accessed: 12 August 2026).
+- Trovato, G. (2026) . Unsplash. Available at: https://unsplash.com/photos/gb6gtiTZKB8 (Accessed: 12 August 2026).
+- Akyurt, E. (2026) . Unsplash. Available at: https://unsplash.com/photos/ZbzYDboNfg (Accessed: 12 August 2026).
+- Koolshooters. (2026) . Pexels. Available at: https://www.pexels.com/photo/6628693/ (Accessed: 12 August 2026).
+
 
 
 
