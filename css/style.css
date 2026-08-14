@@ -1,0 +1,81 @@
+/*
+  Leago Beauty Studio - style.css
+  NOTE: This is a minimal structural stylesheet for Part 1.
+  Visual design and UX optimisation will be completed in Part 2.
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, footer {
+  display: block;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* ---- IMAGE SIZING ---- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.team-member img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#facials img,
+#massages img,
+#nail-care img,
+#waxing img {
+  width: 100%;
+  max-width: 700px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 30px;
+}
