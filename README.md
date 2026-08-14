@@ -1,6 +1,7 @@
 # Leago-s-beauty-studio
 ST10507405 Leago Kekana
-# # Project Overview 1.Organisation Overview 
+# # Project Overview 
+1.Organisation Overview 
 NAME: Leago Beauty Studio
 Leago Beauty Studio is a boutique spa which was started in early 2026, based in Midrand, Gauteng. LBS offers massages, facials, nail care and waxing. It was founded to provide clients with a peaceful, friendly location for relaxation and self-care. Our mission is to make high-quality spa services accessible and enjoyable, and its aim is to become the go to local spa known for consistency and kindness. The target market is diverse ranging from clients scheduling a full relaxation package or treatment for a particular occasion to those seeking a fast manicure/pedicure.  
 
