@@ -1,81 +1,427 @@
-/*
-  Leago Beauty Studio - style.css
-  NOTE: This is a minimal structural stylesheet for Part 1.
-  Visual design and UX optimisation will be completed in Part 2.
-*/
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /* 1rem = 16px, base for responsive scaling */
+    scroll-behavior: smooth;
+}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #A3B18A; /* sage green */
+    color: #FFFFFF; /* white font throughout */
 }
 
-header, nav, main, footer {
-  display: block;
-  padding: 10px;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 15px;
+ul {
+    list-style: none;
+}
+
+
+:root {
+    --sage: #A3B18A;
+    --sage-dark: #8A9A6B;
+    --beige: #EDE0D4;
+    --brown: #7F5539;
+    --brown-dark: #5C3D2E;
+    --white: #FFFFFF;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--white);
+}
+
+ Header + Lo/* --------------------------------------------------------------------------
+go
+   -------------------------------------------------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: var(--brown);
 }
 
 .logo img {
-  height: 60px;
+    max-height: 60px;
 }
 
-/* ---- IMAGE SIZING ---- */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+
+nav {
+    background-color: var(--brown-dark);
 }
 
-#hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.75rem 1rem;
 }
 
-.team-member img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
+nav ul li a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 0.25rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-#facials img,
-#massages img,
-#nail-care img,
-#waxing img {
-  width: 100%;
-  max-width: 700px;
-  max-height: 180px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin: 10px 0;
+nav ul li a:hover,
+nav ul li a:focus {
+    border-bottom: 2px solid var(--beige);
+    color: var(--beige);
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+nav ul li a:active {
+    color: var(--brown);
 }
 
-table, th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    background-color: var(--sage-dark);
 }
 
-form label {
-  display: block;
-  margin-top: 10px;
+#hero h1 {
+    margin: 1.5rem 0 0.5rem;
 }
+
+#hero p {
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+#hero a {
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hero a:hover,
+#hero a:focus {
+    background-color: var(--brown-dark);
+    transform: translateY(-2px);
+}
+
+#hero a:active {
+    transform: translateY(0);
+}
+
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    background-color: var(--beige);
+    color: var(--brown-dark);
+    border-radius: 8px;
+}
+
+#intro h2,
+#intro p {
+    color: var(--brown-dark);
+}
+
+
+#cta {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--brown);
+}
+
+#cta h2 {
+    margin-bottom: 0.75rem;
+}
+
+#cta p {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+}
+
+#cta a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--beige);
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#cta a:hover,
+#cta a:focus {
+    background-color: var(--beige);
+    color: var(--brown-dark);
+}
+
+#cta a:active {
+    background-color: var(--sage-dark);
+    color: var(--white);
+}
+
 
 footer {
-  margin-top: 30px;
+    background-color: var(--brown-dark);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+footer nav ul {
+    gap: 1.25rem;
+}
+
+footer nav ul li a {
+    font-size: 0.85rem;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+main > h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main #facials,
+main #massages,
+main #nail-care,
+main #waxing,
+main #other-treatments {
+    background-color: var(--beige);
+    color: var(--brown-dark);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+main #facials h2,
+main #massages h2,
+main #nail-care h2,
+main #waxing h2,
+main #other-treatments h2,
+main #facials p,
+main #massages p,
+main #nail-care p,
+main #waxing p,
+main #other-treatments p,
+main #facials li,
+main #massages li,
+main #nail-care li,
+main #waxing li {
+    color: var(--brown-dark);
+}
+
+main #facials a,
+main #massages a,
+main #nail-care a,
+main #waxing a,
+main #other-treatments a {
+    color: var(--brown);
+    text-decoration: underline;
+}
+
+/* Service photos: intentionally smaller than full-width, centred */
+.service-photo {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+}
+
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin: 2rem 0;
+}
+
+.pricing-card {
+    background-color: var(--beige);
+    color: var(--brown-dark);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.pricing-card h2 {
+    color: var(--brown-dark);
+    margin-bottom: 1rem;
+}
+
+.pricing-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-card th,
+.pricing-card td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--sage-dark);
+    border-right: 1px solid var(--sage-dark);
+    font-size: 0.9rem;
+}
+
+.pricing-card th:last-child,
+.pricing-card td:last-child {
+    border-right: none;
+}
+
+.pricing-card th {
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+.pricing-card tbody tr:hover {
+    background-color: rgba(163, 177, 138, 0.25); /* sage tint on hover */
+}
+
+
+
+/* Small desktop / large tablet: max-width 1024px */
+@media (max-width: 1024px) {
+    #intro {
+        max-width: 90%;
+    }
+
+    #hero {
+        padding: 3.5rem 1.5rem;
+    }
+
+    nav ul {
+        gap: 1.25rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #intro {
+        padding: 2rem 1rem;
+    }
+
+    #cta a {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .service-photo {
+        max-width: 260px;
+    }
+}
+
+/* Mobile: max-width 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo img {
+        max-height: 45px;
+    }
+
+    #hero {
+        padding: 2.5rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .service-photo {
+        max-width: 200px;
+    }
+
+    .pricing-card th,
+    .pricing-card td {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.35rem;
+    }
 }
