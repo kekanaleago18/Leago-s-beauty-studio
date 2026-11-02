@@ -1,5 +1,7 @@
 # Leago-s-beauty-studio
 ST10507405 Leago Kekana
+Live Website :** kekanaleago18.github.io/Leago-s-beauty-studio
+Repository: **https://github.com/kekanaleago18/Leago-s-beauty-studio 
 # # Project Overview 
 1.Organisation Overview 
 NAME: Leago Beauty Studio
@@ -53,6 +55,9 @@ REFERENCES
 - Trovato, G. (2026) . Unsplash. Available at: https://unsplash.com/photos/gb6gtiTZKB8 (Accessed: 12 August 2026).
 - Akyurt, E. (2026) . Unsplash. Available at: https://unsplash.com/photos/ZbzYDboNfg (Accessed: 12 August 2026).
 - Koolshooters. (2026) . Pexels. Available at: https://www.pexels.com/photo/6628693/ (Accessed: 12 August 2026).
+
+
+
 
 
 ## 1. Project Overview
