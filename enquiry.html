@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leago Beauty Studio | Enquiry</title>
+    <title>Book a Spa Treatment Enquiry | Leago Beauty Studio</title>
+    <meta name="description" content="Enquire about facials, massages, nail care, waxing or membership at Leago Beauty Studio and get an instant price guide and availability.">
+    <meta name="keywords" content="spa booking, enquiry, facials, massages, nail care, waxing, membership, Leago Beauty Studio">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,20 +37,22 @@
             get back to you to confirm your appointment.
         </p>
 
-        <!-- Booking-style enquiry form -->
-        <section id="enquiry-form">
-            <form action="#" method="post">
+        <section id="enquiry-section">
+            <form id="enquiry-form" novalidate>
                 <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" required>
+                <input type="text" id="full-name" name="full-name">
+                <span class="error" id="full-name-error"></span>
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
+                <span class="error" id="email-error"></span>
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" placeholder="0123456789">
+                <span class="error" id="phone-error"></span>
 
                 <label for="service">Service of Interest</label>
-                <select id="service" name="service" required>
+                <select id="service" name="service">
                     <option value="">-- Select a Service --</option>
                     <option value="facials">Facials</option>
                     <option value="massages">Massages</option>
@@ -57,18 +61,23 @@
                     <option value="membership">Membership</option>
                     <option value="other">Other</option>
                 </select>
+                <span class="error" id="service-error"></span>
 
                 <label for="preferred-date">Preferred Date</label>
                 <input type="date" id="preferred-date" name="preferred-date">
+                <span class="error" id="preferred-date-error"></span>
 
                 <label for="preferred-time">Preferred Time</label>
                 <input type="time" id="preferred-time" name="preferred-time">
+                <span class="error" id="preferred-time-error"></span>
 
                 <label for="message">Additional Message</label>
                 <textarea id="message" name="message" rows="5"></textarea>
 
                 <button type="submit">Submit Enquiry</button>
             </form>
+
+            <div id="enquiry-response" aria-live="polite"></div>
         </section>
     </main>
 

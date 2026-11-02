@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leago Beauty Studio | Services</title>
+    <title>Facials, Massages, Nail Care and Waxing | Leago Beauty Studio</title>
+    <meta name="description" content="Explore Leago Beauty Studio's facials, massages, nail care and waxing treatments. Open each service to see what we offer.">
+    <meta name="keywords" content="facials, massages, nail care, manicure, pedicure, waxing, spa treatments, Leago Beauty Studio">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,68 +37,75 @@
             waxing, our team is dedicated to helping you look and feel your best.
         </p>
 
-        <!-- Facials -->
         <section id="facials">
             <h2>Facials</h2>
-            <img src="images/service-facials.jpg" alt="Client receiving a facial treatment" class="service-photo">
+            <img src="images/service-facials.jpg" alt="Client receiving a facial treatment" class="service-photo gallery-img">
             <p>
                 Our facials are designed to cleanse, exfoliate, and nourish your skin, leaving
                 you refreshed and glowing. Choose from a range of facials tailored to your skin
                 type and concerns.
             </p>
-            <ul>
-                <li>Classic cleansing facial</li>
-                <li>Deep hydration facial</li>
-                <li>Anti-ageing facial</li>
-            </ul>
+            <button class="acc-btn" aria-expanded="false">View our facials</button>
+            <div class="acc-panel">
+                <ul>
+                    <li>Classic cleansing facial</li>
+                    <li>Deep hydration facial</li>
+                    <li>Anti-ageing facial</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Massages -->
         <section id="massages">
             <h2>Massages</h2>
-            <img src="images/service-massage.jpg" alt="Client receiving a relaxing massage" class="service-photo">
+            <img src="images/service-massage.jpg" alt="Client receiving a relaxing massage" class="service-photo gallery-img">
             <p>
                 Unwind with one of our massage treatments, designed to relieve tension and
                 promote deep relaxation.
             </p>
-            <ul>
-                <li>Swedish relaxation massage</li>
-                <li>Deep tissue massage</li>
-                <li>Hot stone massage</li>
-            </ul>
+            <button class="acc-btn" aria-expanded="false">View our massages</button>
+            <div class="acc-panel">
+                <ul>
+                    <li>Swedish relaxation massage</li>
+                    <li>Deep tissue massage</li>
+                    <li>Hot stone massage</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Nail care -->
         <section id="nail-care">
             <h2>Nail Care</h2>
-            <img src="images/service-nails.jpg" alt="Client receiving a manicure" class="service-photo">
+            <img src="images/service-nails.jpg" alt="Client receiving a manicure" class="service-photo gallery-img">
             <p>
                 From a quick manicure to a full pedicure, our nail technicians will leave your
                 hands and feet looking polished and beautiful.
             </p>
-            <ul>
-                <li>Classic manicure</li>
-                <li>Classic pedicure</li>
-                <li>Gel nail application</li>
-            </ul>
+            <button class="acc-btn" aria-expanded="false">View our nail treatments</button>
+            <div class="acc-panel">
+                <ul>
+                    <li>Classic manicure</li>
+                    <li>Classic pedicure</li>
+                    <li>Gel nail application</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Waxing -->
         <section id="waxing">
             <h2>Waxing</h2>
-            <img src="images/service-waxing.jpg" alt="Waxing treatment room" class="service-photo">
+            <img src="images/service-waxing.jpg" alt="Waxing treatment room" class="service-photo gallery-img">
             <p>
                 Our waxing services are quick, professional, and gentle on the skin, leaving you
                 smooth for weeks at a time.
             </p>
-            <ul>
-                <li>Full leg wax</li>
-                <li>Eyebrow shaping</li>
-                <li>Underarm wax</li>
-            </ul>
+            <button class="acc-btn" aria-expanded="false">View our waxing services</button>
+            <div class="acc-panel">
+                <ul>
+                    <li>Full leg wax</li>
+                    <li>Eyebrow shaping</li>
+                    <li>Underarm wax</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Other treatments -->
         <section id="other-treatments">
             <h2>Other Treatments</h2>
             <p>
@@ -105,6 +114,11 @@
                 <a href="enquiry.html">enquire online</a>.
             </p>
         </section>
+
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+            <button id="lightbox-close" aria-label="Close image">&times;</button>
+            <img id="lightbox-img" src="" alt="">
+        </div>
     </main>
 
     <footer>

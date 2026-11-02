@@ -3,95 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leago Beauty Studio | Contact</title>
+    <title>Contact Leago Beauty Studio | Noordwyk and Waterfall, Midrand</title>
+    <meta name="description" content="Contact Leago Beauty Studio at our Noordwyk or Waterfall studio in Midrand. Find us on the map or send us a message.">
+    <meta name="keywords" content="contact beauty studio, spa Midrand, Noordwyk, Waterfall, Leago Beauty Studio">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ===== HEADER / NAVIGATION ===== -->
     <header>
         <div class="logo">
-            <h1>Leago Beauty Studio</h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Leago Beauty Studio Logo">
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiry.html">Enquire</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- ===== MAIN CONTENT ===== -->
-    <main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
 
+    <main>
         <section class="page-heading">
-            <h2>Contact Us</h2>
+            <h1>Contact Us</h1>
         </section>
 
         <section class="contact-info">
+            <h2>Our Studios</h2>
             <div class="location">
-                <h3>Studio 1 – [Noordwyk]</h3>
-                <p>123 Wattle Road, [Noordwyk], [Midrand]</p>
+                <h3>Studio 1 &ndash; Noordwyk</h3>
+                <p>123 Wattle Road, Noordwyk, Midrand</p>
                 <p>Tel: 012 234 5698</p>
             </div>
             <div class="location">
-                <h3>Studio 2 – [Waterfall]</h3>
-                <p>89 Karkloof Crescent, [Waterfall], [Midrand]</p>
+                <h3>Studio 2 &ndash; Waterfall</h3>
+                <p>89 Karkloof Crescent, Waterfall, Midrand</p>
                 <p>Tel: 012 987 6543</p>
             </div>
             <p>Email: leagobeautystudio@gmail.com</p>
         </section>
 
         <section class="map">
-            <h3>Find Us</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK_LOCATION_1"
-                width="50%"
-                height="200"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                title="Map showing Leago Beauty Studio location 1">
-            </iframe>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK_LOCATION_2"
-                width="50%"
-                height="200"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                title="Map showing Leago Beauty Studio location 2">
-            </iframe>
+            <h2>Find Us</h2>
+            <div id="map" style="height:350px;"></div>
         </section>
 
         <section class="contact-form">
-            <h3>Send Us a Message</h3>
-            <form action="#" method="post">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" novalidate>
 
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
+                <span class="error" id="name-error"></span>
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
+                <span class="error" id="email-error"></span>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="0123456789">
+                <span class="error" id="phone-error"></span>
+
+                <label for="type">Type of Message</label>
+                <select id="type" name="type">
+                    <option value="">Choose...</option>
+                    <option value="General Question">General question</option>
+                    <option value="Booking">Booking</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Complaint">Complaint</option>
+                </select>
+                <span class="error" id="type-error"></span>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5"></textarea>
+                <span class="error" id="message-error"></span>
 
                 <button type="submit">Send Message</button>
-
+                <p id="form-status"></p>
             </form>
         </section>
-
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer>
         <p>&copy; 2026 Leago Beauty Studio. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
